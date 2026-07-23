@@ -11,7 +11,7 @@
         "type": "HTTP",
         "paths": [
           {
-            "path": "/13-feb-2/",
+            "path": "/13-feb-02/",
             "overrideAccess": false
           }
         ],
@@ -90,12 +90,12 @@
     "createdAt": "2026-02-13T07:32:44.71Z",
     "updatedAt": "2026-03-03T07:23:49.234Z",
     "disableMembershipNotifications": false,
-    "groups": [],
+    "groups": ["f5f158c0-dcf5-49cc-b158-c0dcf529cc4b"],
     "state": "STARTED",
     "visibility": "PRIVATE",
     "labels": [],
     "lifecycleState": "CREATED",
-    "tags": [],
+    "tags": ["abc"],
     "primaryOwner": {
       "id": "dd4f93a3-c42c-46e7-8f93-a3c42cb6e7c0",
       "displayName": "admin",

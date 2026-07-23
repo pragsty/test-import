@@ -1,0 +1,260 @@
+{
+  "export": {
+    "date": "2026-07-08T15:16:58.985996Z",
+    "apimVersion": "4.13.0-SNAPSHOT"
+  },
+  "api": {
+    "definitionVersion": "V4",
+    "type": "PROXY",
+    "listeners": [
+      {
+        "type": "HTTP",
+        "paths": [
+          {
+            "path": "/13-feb-2/",
+            "overrideAccess": false
+          }
+        ],
+        "pathMappings": [],
+        "entrypoints": [
+          {
+            "type": "http-proxy",
+            "qos": "AUTO",
+            "configuration": {}
+          }
+        ],
+        "servers": []
+      }
+    ],
+    "endpointGroups": [
+      {
+        "name": "Default HTTP proxy group new",
+        "type": "http-proxy",
+        "loadBalancer": {
+          "type": "ROUND_ROBIN"
+        },
+        "sharedConfiguration": "{\"proxy\":{\"useSystemProxy\":false,\"enabled\":false},\"http\":{\"keepAliveTimeout\":30000,\"keepAlive\":true,\"propagateClientHost\":false,\"followRedirects\":false,\"readTimeout\":10000,\"idleTimeout\":0,\"connectTimeout\":3000,\"useCompression\":true,\"maxConcurrentConnections\":20,\"version\":\"HTTP_1_1\",\"pipelining\":false},\"ssl\":{\"keyStore\":{\"type\":\"\"},\"hostnameVerifier\":true,\"trustStore\":{\"type\":\"\"},\"trustAll\":false}}",
+        "endpoints": [
+          {
+            "name": "Default HTTP proxy",
+            "type": "http-proxy",
+            "weight": 1,
+            "inheritConfiguration": true,
+            "configuration": {
+              "target": "https://api.gravitee.io/echo"
+            },
+            "services": {},
+            "secondary": false,
+            "tenants": []
+          }
+        ],
+        "services": {}
+      }
+    ],
+    "analytics": {
+      "enabled": true,
+      "logging": {
+        "content": {
+          "headers": true,
+          "messageHeaders": false,
+          "payload": true,
+          "messagePayload": false,
+          "messageMetadata": false
+        },
+        "phase": {
+          "request": true,
+          "response": true
+        },
+        "mode": {
+          "endpoint": true,
+          "entrypoint": true
+        }
+      },
+      "tracing": {
+        "enabled": true,
+        "verbose": false
+      }
+    },
+    "flowExecution": {
+      "mode": "DEFAULT",
+      "matchRequired": false
+    },
+    "flows": [],
+    "allowedInApiProducts": true,
+    "allowMultiJwtOauth2Subscriptions": false,
+    "id": "f5f69172-11aa-43ae-b691-7211aa43aeb2",
+    "name": "13-feb-2",
+    "description": "updating the dsscrpoot now 34343",
+    "apiVersion": "1",
+    "deployedAt": "2026-03-03T07:23:49.234Z",
+    "createdAt": "2026-02-13T07:32:44.71Z",
+    "updatedAt": "2026-03-03T07:23:49.234Z",
+    "disableMembershipNotifications": false,
+    "groups": [],
+    "state": "STARTED",
+    "visibility": "PRIVATE",
+    "labels": [],
+    "lifecycleState": "CREATED",
+    "tags": [],
+    "primaryOwner": {
+      "id": "dd4f93a3-c42c-46e7-8f93-a3c42cb6e7c0",
+      "displayName": "admin",
+      "type": "USER"
+    },
+    "categories": [],
+    "originContext": {
+      "origin": "MANAGEMENT"
+    },
+    "responseTemplates": {},
+    "resources": [],
+    "properties": []
+  },
+  "members": [
+    {
+      "id": "dd4f93a3-c42c-46e7-8f93-a3c42cb6e7c0",
+      "displayName": "admin",
+      "roles": [
+        {
+          "name": "PRIMARY_OWNER",
+          "scope": "API"
+        }
+      ]
+    }
+  ],
+  "metadata": [
+    {
+      "key": "dsdsd",
+      "name": "dsdsd",
+      "format": "NUMERIC",
+      "value": "3"
+    },
+    {
+      "key": "zzzzsdasdad",
+      "name": "zzzzsdasdad",
+      "format": "STRING",
+      "value": "dsdsd"
+    },
+    {
+      "key": "dfdsf",
+      "name": "dfdsf",
+      "format": "STRING",
+      "value": "fsdfsdf"
+    },
+    {
+      "key": "dsfsdf",
+      "name": "dsfsdf",
+      "format": "STRING",
+      "value": "dfsdfsdf"
+    },
+    {
+      "key": "fdfdfsd",
+      "name": "fdfdfsd",
+      "format": "STRING",
+      "value": "fdfdf"
+    },
+    {
+      "key": "new-data",
+      "name": "new data",
+      "format": "STRING",
+      "value": "weee"
+    },
+    {
+      "key": "klklkl",
+      "name": "klklkl",
+      "format": "STRING",
+      "value": "kl"
+    },
+    {
+      "key": "mdata",
+      "name": "mdata",
+      "format": "STRING",
+      "value": "somehting"
+    },
+    {
+      "key": "something-dstaa",
+      "name": "something-dstaa",
+      "format": "STRING",
+      "value": "newvale"
+    },
+    {
+      "key": "fsdfsdf",
+      "name": "fsdfsdf",
+      "format": "STRING",
+      "value": "dfsdfsdf"
+    },
+    {
+      "key": "dfdfdsf",
+      "name": "dfdfdsf",
+      "format": "STRING",
+      "value": "dfsdfsdf"
+    },
+    {
+      "key": "sdasdasd",
+      "name": "sdasdasd",
+      "format": "STRING",
+      "value": "dsdasd"
+    }
+  ],
+  "pages": [],
+  "plans": [
+    {
+      "definitionVersion": "V4",
+      "flows": [],
+      "id": "b47f6d36-4ba5-4ebc-bf6d-364ba5bebc07",
+      "name": "klkl",
+      "description": "",
+      "security": {
+        "type": "OAUTH2",
+        "configuration": {
+          "oauthResource": "kl",
+          "extractPayload": false,
+          "checkRequiredScopes": false,
+          "addWwwAuthenticateHeader": true,
+          "requiredScopes": [],
+          "modeStrict": true,
+          "propagateAuthHeader": true
+        }
+      },
+      "mode": "STANDARD",
+      "characteristics": [],
+      "commentMessage": "",
+      "commentRequired": false,
+      "createdAt": "2026-02-26T14:24:43.045Z",
+      "excludedGroups": [],
+      "generalConditions": "",
+      "order": 1,
+      "publishedAt": "2026-02-26T14:24:45.249Z",
+      "status": "PUBLISHED",
+      "tags": [],
+      "type": "API",
+      "updatedAt": "2026-02-26T14:24:45.249Z",
+      "validation": "MANUAL"
+    },
+    {
+      "definitionVersion": "V4",
+      "flows": [],
+      "id": "349fbd71-7ec1-40e3-9fbd-717ec150e382",
+      "name": "keyless",
+      "description": "",
+      "security": {
+        "type": "KEY_LESS",
+        "configuration": {}
+      },
+      "mode": "STANDARD",
+      "characteristics": [],
+      "commentMessage": "",
+      "commentRequired": false,
+      "createdAt": "2026-03-03T07:23:37.546Z",
+      "excludedGroups": [],
+      "generalConditions": "",
+      "order": 2,
+      "publishedAt": "2026-03-03T07:23:43.054Z",
+      "status": "PUBLISHED",
+      "tags": [],
+      "type": "API",
+      "updatedAt": "2026-03-03T07:23:43.054Z",
+      "validation": "MANUAL"
+    }
+  ],
+  "apiMedia": []
+}
